@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>JavaScript to Sinatra using AJAX</title>
+  </head>
+  <body>
+    
+    <!-- use user[value] for input field names to create/submit hash of values -->
+    <form action="/" method="post" id="ajax_submit">
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" id="f_name" name="user[f_name]"></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" id="l_name" name="user[l_name]"></td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="text" id="age" name="user[age]"></td>
+        </tr>
+      </table>
+      <input type="submit">
+    </form>
+
+    <!-- div populated with /update route via jQuery/AJAX -->
+    <div id="ajax_div"></div>
+
+    <!-- load scripts at end of body for better site performance -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
+
+  </body>
+</html>
